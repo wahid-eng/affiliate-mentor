@@ -1,12 +1,12 @@
 :root {
-	--golden-rgb: rgb(247, 215, 154);
+	--rgb-golden: rgb(247, 215, 154);
 	--gradient-golden: linear-gradient(
 		120deg,
 		rgba(247, 215, 154, 1) 0%,
 		rgba(202, 169, 105, 1) 100%
 	);
 
-	--diamond-rgb: rgb(136, 132, 119);
+	--rgb-diamond: rgb(136, 132, 119);
 	--gradient-diamond: linear-gradient(
 		90deg,
 		rgba(255, 255, 255, 1) 0%,
@@ -14,26 +14,34 @@
 		rgba(136, 132, 119, 1) 100%
 	);
 
-	--mystic-rgb: rgb(231, 240, 238);
+	--rgb-mystic: rgb(231, 240, 238);
+	--rgb-gray: rgb(43, 43, 43);
 }
 
 .font-garamond {
 	font-family: 'EB Garamond', serif;
 }
 
+.rounded-10 {
+	border-radius: 10px;
+}
+
+.bg-gray {
+	background-color: var(--rgb-gray);
+}
+
 .bg-gradient-golden {
-	background: var(--golden-rgb);
+	background: var(--rgb-golden);
 	background: var(--gradient-golden);
 }
 
 .btn-golden {
 	color: black;
-	background: var(--golden-rgb);
+	background: var(--rgb-golden);
 	background: var(--gradient-golden);
 	display: inline-flex;
 	align-items: center;
 	gap: 0.25rem;
-	font-size: 0.675rem;
 	font-weight: bold;
 	font-family: 'EB Garamond', serif;
 }
@@ -43,19 +51,18 @@
 }
 
 .bg-gradient-diamond {
-	background: var(--diamond-rgb);
+	background: var(--rgb-diamond);
 	background: var(--gradient-diamond);
 }
 
 .btn-diamond {
 	color: black;
-	background: var(--diamond-rgb);
+	background: var(--rgb-diamond);
 	background: var(--gradient-diamond);
-	border: 1px solid var(--diamond-rgb);
+	border: 1px solid var(--rgb-diamond);
 	display: inline-flex;
 	align-items: center;
 	gap: 0.25rem;
-	font-size: 1rem;
 	font-weight: bold;
 	font-family: 'EB Garamond', serif;
 }
@@ -65,14 +72,18 @@
 }
 
 .text-gradient-golden {
-	background: var(--golden-rgb);
+	background: var(--rgb-golden);
 	background: var(--gradient-golden);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
 .text-mystic {
-	color: var(--mystic-rgb);
+	color: var(--rgb-mystic);
+}
+
+.text-black {
+	color: black;
 }
 
 .cap-title {
