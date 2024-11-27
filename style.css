@@ -20,7 +20,7 @@
 }
 
 .marketing-widget {
-	min-height: 220px;
+	min-height: 200px;
 }
 
 .writing-mode-vertical {
@@ -148,67 +148,53 @@
 	object-fit: contain;
 }
 
-.bg-training {
-	background-image: url(./img/bg-training.png);
+.bg-certification {
+	background-image: url(./img/bg-certification.png);
 	background-size: 100%;
 	background-color: black;
 	background-repeat: no-repeat;
 	background-position: center center;
 }
 
-.certification-item {
-	background-image: url(./img/bg-certification.png);
+.bg-training {
+	background-image: url(./img/bg-training.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	background-position: center;
-	text-align: center;
-	padding-left: 2rem;
-	padding-right: 2rem;
-	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	min-height: 150px;
-	gap: 10px;
+	background-color: var(--gradient-diamond);
+	background-color: var(--gradient-diamond);
+}
 
-	h5 {
-		color: black;
-		font-size: 1.5rem;
-		font-family: 'EB Garamond', serif;
-		margin: auto;
-		font-weight: bold;
+.certification-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-auto-rows: 1fr;
+	gap: 1.5rem;
+	li {
+		padding: 5px;
+		border-radius: 5px;
 	}
-
-	.btn-diamond {
-		align-self: center;
+	h5 {
+		font-weight: bold;
+		line-height: 1;
 	}
 }
 
-@media (min-width: 575px) {
-	.certification-item {
-		padding-left: 1rem;
-		padding-right: 1rem;
-		h5 {
-			font-size: 1.25rem;
-		}
+@media (min-width: 576px) {
+	.certification-list {
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
 @media (min-width: 768px) {
-	.certification-item {
-		h5 {
-			font-size: 1.25rem;
-		}
+	.certification-list {
+		grid-template-columns: repeat(3, 1fr);
 	}
 }
 
-@media (min-width: 1200px) {
-	.certification-item {
-		padding-left: 2rem;
-		padding-right: 2rem;
-		h5 {
-			font-size: 1.5rem;
-		}
+@media (min-width: 992px) {
+	.certification-list {
+		grid-template-columns: repeat(4, 1fr);
 	}
 }
