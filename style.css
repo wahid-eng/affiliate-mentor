@@ -1,0 +1,154 @@
+:root {
+	--golden-rgb: rgb(247, 215, 154);
+	--gradient-golden: linear-gradient(
+		120deg,
+		rgba(247, 215, 154, 1) 0%,
+		rgba(202, 169, 105, 1) 100%
+	);
+
+	--diamond-rgb: rgb(136, 132, 119);
+	--gradient-diamond: linear-gradient(
+		90deg,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(255, 255, 255, 1) 30%,
+		rgba(136, 132, 119, 1) 100%
+	);
+
+	--mystic-rgb: rgb(231, 240, 238);
+}
+
+.font-garamond {
+	font-family: 'EB Garamond', serif;
+}
+
+.bg-gradient-golden {
+	background: var(--golden-rgb);
+	background: var(--gradient-golden);
+}
+
+.btn-golden {
+	color: black;
+	background: var(--golden-rgb);
+	background: var(--gradient-golden);
+	display: inline-flex;
+	align-items: center;
+	gap: 0.25rem;
+	font-size: 0.675rem;
+	font-weight: bold;
+	font-family: 'EB Garamond', serif;
+}
+
+.btn-golden:hover {
+	color: black;
+}
+
+.bg-gradient-diamond {
+	background: var(--diamond-rgb);
+	background: var(--gradient-diamond);
+}
+
+.btn-diamond {
+	color: black;
+	background: var(--diamond-rgb);
+	background: var(--gradient-diamond);
+	border: 1px solid var(--diamond-rgb);
+	display: inline-flex;
+	align-items: center;
+	gap: 0.25rem;
+	font-size: 1rem;
+	font-weight: bold;
+	font-family: 'EB Garamond', serif;
+}
+
+.btn-diamond:hover {
+	color: black;
+}
+
+.text-gradient-golden {
+	background: var(--golden-rgb);
+	background: var(--gradient-golden);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.text-mystic {
+	color: var(--mystic-rgb);
+}
+
+.cap-title {
+	position: relative;
+	img {
+		position: absolute;
+		left: 5px;
+		bottom: 100%;
+	}
+}
+
+.object-contain {
+	object-fit: contain;
+}
+
+.certification-training {
+	background: url(./img/bg-training.png);
+	background-size: 100%;
+	background-color: black;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.certification-item {
+	background: url(./img/bg-certification.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+	text-align: center;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	min-height: 150px;
+	gap: 10px;
+
+	h5 {
+		color: black;
+		font-size: 1.5rem;
+		font-family: 'EB Garamond', serif;
+		margin: auto;
+		font-weight: bold;
+	}
+
+	.btn-diamond {
+		align-self: center;
+	}
+}
+
+@media (min-width: 575px) {
+	.certification-item {
+		padding-left: 1rem;
+		padding-right: 1rem;
+		h5 {
+			font-size: 1.25rem;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.certification-item {
+		h5 {
+			font-size: 1.25rem;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.certification-item {
+		padding-left: 2rem;
+		padding-right: 2rem;
+		h5 {
+			font-size: 1.5rem;
+		}
+	}
+}
