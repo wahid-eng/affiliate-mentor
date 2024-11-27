@@ -36,23 +36,23 @@
 
 		if (days != 0) {
 			html +=
-				"<div class='bg-gradient-golden h3 font-weight-bold px-2 py-1 days'>" +
+				"<div class='bg-gradient-golden h3 font-weight-bold px-2 py-1 text-black days'>" +
 				pad(days) +
 				'</div>';
 		}
 
 		html +=
-			"<div class='bg-gradient-golden h3 font-weight-bold px-2 py-1 hours'>" +
+			"<div class='bg-gradient-golden h3 font-weight-bold px-2 py-1 text-black hours'>" +
 			pad(hours) +
 			'</div>';
 
 		html +=
-			"<div class='bg-gradient-golden h3 font-weight-bold px-2 py-1 minutes'>" +
+			"<div class='bg-gradient-golden h3 font-weight-bold px-2 py-1 text-black minutes'>" +
 			pad(minutes) +
 			'</div>';
 
 		html +=
-			"<div class='bg-gradient-golden h3 font-weight-bold px-2 py-1 seconds'>" +
+			"<div class='bg-gradient-golden h3 font-weight-bold px-2 py-1 text-black seconds'>" +
 			pad(seconds) +
 			'</div>';
 
