@@ -22,6 +22,10 @@
 	line-height: 1;
 }
 
+.text-justify {
+	text-align: justify;
+}
+
 .font-garamond {
 	font-family: 'EB Garamond', serif;
 }
