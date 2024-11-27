@@ -21,6 +21,36 @@
 
 .marketing-widget {
 	min-height: 200px;
+	h1,
+	.h1 {
+		@media (max-width: 576px) {
+			font-size: 1.5rem;
+		}
+	}
+	h2,
+	.h2 {
+		@media (max-width: 576px) {
+			font-size: 1.375rem;
+		}
+	}
+	h3,
+	.h3 {
+		@media (max-width: 576px) {
+			font-size: 1.25rem;
+		}
+	}
+	h4,
+	.h4 {
+		@media (max-width: 576px) {
+			font-size: 1.125rem;
+		}
+	}
+	h5,
+	.h5 {
+		@media (max-width: 576px) {
+			font-size: 1rem;
+		}
+	}
 }
 
 .writing-mode-vertical {
@@ -45,10 +75,6 @@
 
 .line-height-1 {
 	line-height: 1;
-}
-
-.text-justify {
-	text-align: justify;
 }
 
 .font-garamond {
@@ -154,6 +180,11 @@
 	background-color: black;
 	background-repeat: no-repeat;
 	background-position: center center;
+	& > h2 {
+		@media (max-width: 576px) {
+			font-size: 1.375rem;
+		}
+	}
 }
 
 .bg-training {
@@ -179,22 +210,16 @@
 		font-weight: bold;
 		line-height: 1;
 	}
-}
 
-@media (min-width: 576px) {
-	.certification-list {
+	@media (min-width: 576px) {
 		grid-template-columns: repeat(2, 1fr);
 	}
-}
 
-@media (min-width: 768px) {
-	.certification-list {
+	@media (min-width: 768px) {
 		grid-template-columns: repeat(3, 1fr);
 	}
-}
 
-@media (min-width: 992px) {
-	.certification-list {
+	@media (min-width: 992px) {
 		grid-template-columns: repeat(4, 1fr);
 	}
 }
