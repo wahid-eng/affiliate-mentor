@@ -16,6 +16,7 @@
 
 	--rgb-mystic: rgb(231, 240, 238);
 	--rgb-gray: rgb(43, 43, 43);
+	--rgb-light-gray: rgb(76, 76, 76);
 }
 
 .line-height-1 {
@@ -36,6 +37,10 @@
 
 .bg-gray {
 	background-color: var(--rgb-gray);
+}
+
+.bg-light-gray {
+	background-color: var(--rgb-light-gray);
 }
 
 .bg-black {
