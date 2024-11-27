@@ -19,6 +19,10 @@
 	--rgb-light-gray: rgb(68, 68, 68);
 }
 
+.marketing-widget {
+	min-height: 220px;
+}
+
 .writing-mode-vertical {
 	writing-mode: vertical-lr;
 }
