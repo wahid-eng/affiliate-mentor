@@ -39,6 +39,10 @@
 	gap: 0.5rem;
 }
 
+.flex-gap-3 {
+	gap: 1rem;
+}
+
 .line-height-1 {
 	line-height: 1;
 }
