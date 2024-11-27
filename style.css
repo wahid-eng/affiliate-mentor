@@ -16,7 +16,23 @@
 
 	--rgb-mystic: rgb(231, 240, 238);
 	--rgb-gray: rgb(43, 43, 43);
-	--rgb-light-gray: rgb(76, 76, 76);
+	--rgb-light-gray: rgb(68, 68, 68);
+}
+
+.writing-mode-vertical {
+	writing-mode: vertical-lr;
+}
+
+.orientation-mixed {
+	text-orientation: mixed;
+}
+
+.admit-one {
+	border-right: 1px dashed black;
+}
+
+.flex-gap-2 {
+	gap: 0.5rem;
 }
 
 .line-height-1 {
