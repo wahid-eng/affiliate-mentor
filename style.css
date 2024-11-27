@@ -3,7 +3,8 @@
 	--gradient-golden: linear-gradient(
 		120deg,
 		rgba(247, 215, 154, 1) 0%,
-		rgba(202, 169, 105, 1) 100%
+		rgba(247, 215, 154, 1) 30%,
+		rgb(170, 130, 50) 100%
 	);
 
 	--rgb-diamond: rgb(136, 132, 119);
@@ -20,34 +21,37 @@
 }
 
 .marketing-widget {
-	min-height: 200px;
+	min-height: 180px;
+	@media (min-width: 576px) {
+		min-height: 215px;
+	}
 	h1,
 	.h1 {
-		@media (max-width: 576px) {
+		@media (max-width: 575px) {
 			font-size: 1.5rem;
 		}
 	}
 	h2,
 	.h2 {
-		@media (max-width: 576px) {
+		@media (max-width: 575px) {
 			font-size: 1.375rem;
 		}
 	}
 	h3,
 	.h3 {
-		@media (max-width: 576px) {
+		@media (max-width: 575px) {
 			font-size: 1.25rem;
 		}
 	}
 	h4,
 	.h4 {
-		@media (max-width: 576px) {
+		@media (max-width: 575px) {
 			font-size: 1.125rem;
 		}
 	}
 	h5,
 	.h5 {
-		@media (max-width: 576px) {
+		@media (max-width: 575px) {
 			font-size: 1rem;
 		}
 	}
@@ -181,7 +185,7 @@
 	background-repeat: no-repeat;
 	background-position: center center;
 	& > h2 {
-		@media (max-width: 576px) {
+		@media (max-width: 575px) {
 			font-size: 1.375rem;
 		}
 	}
@@ -193,6 +197,12 @@
 	background-size: 100% 100%;
 	background-color: var(--gradient-diamond);
 	background-color: var(--gradient-diamond);
+	&.open {
+		background-image: url(./img/bg-training-vip.png);
+		a {
+			border-color: var(--rgb-golden);
+		}
+	}
 }
 
 .certification-list {
@@ -206,6 +216,16 @@
 		padding: 5px;
 		border-radius: 5px;
 	}
+
+	.open a {
+		background: var(--gradient-golden);
+	}
+
+	a {
+		min-width: 105px;
+		justify-content: center;
+	}
+
 	h5 {
 		font-weight: bold;
 		line-height: 1;

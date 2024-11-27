@@ -518,7 +518,7 @@
 												C.O.R.E
 											</h1>
 											<div class="d-flex flex-column h-100 px-3">
-												<p class="text-center text-white font-garamond mb-3">
+												<p class="text-center text-mystic font-garamond mb-3">
 													Clicks <i class="fas fa-arrow-right mx-1"></i> Optins
 													<i class="fas fa-arrow-right mx-1"></i> Revenue
 													<i class="fas fa-arrow-right mx-1"></i> Email List
@@ -542,15 +542,10 @@
 												</div>
 											</div>
 											<div
-												class="d-flex align-items-center justify-content-center px-2 py-1 bg-gray mt-auto"
+												class="d-flex align-items-center justify-content-center px-2 py-1 bg-gradient-golden mt-auto"
 											>
-												<img
-													src="./img/icon-lock.png"
-													alt="Lock image"
-													class="object-contain mr-2 d-none d-md-block"
-												/>
-												<p class="mb-0 text-white font-weight-bold">
-													GO VIP &AMP; EARN 2X CLICK CASH
+												<p class="mb-0 text-black font-weight-bold">
+													YOU QUALIFY FOR 2X CLICK CASH
 												</p>
 											</div>
 										</div>
@@ -581,17 +576,12 @@
 												></a>
 											</div>
 											<div
-												class="d-flex align-items-center justify-content-center mt-auto bg-black p-2"
+												class="d-flex align-items-center justify-content-center mt-auto bg-gradient-golden p-2"
 											>
-												<img
-													src="./img/icon-lock-lg.png"
-													alt="Lock image"
-													class="object-contain mr-2 d-none d-md-block"
-												/>
 												<p
-													class="mb-0 text-white font-weight-bold h4 line-height-1"
+													class="mb-0 text-black font-weight-bold h5 line-height-1 text-center"
 												>
-													GO VIP &amp; GET UP TO<br />$2,500 FREE TRAFFIC
+												CLICK HERE TO CLAIM YOUR<br/>$2,500 Free Traffic
 												</p>
 											</div>
 										</div>
@@ -602,10 +592,10 @@
 										>
 											<div class="d-flex justify-content-center px-3 pt-4">
 												<h2
-													class="cap-title font-weight-bold m-0 font-garamond text-white mt-4"
+													class="cap-title font-weight-bold m-0 font-garamond text-gradient-golden mt-4"
 												>
 													<img
-														src="./img/icon-crown.png"
+														src="./img/icon-crown-vip.png"
 														alt="Crown image"
 														class="object-contain d-block"
 													/>
@@ -614,39 +604,34 @@
 											</div>
 
 											<div class="text-center my-auto">
-												<a href="#" class="btn-diamond px-3 h5 m-0"
-													>UPGRADE <i class="fas fa-caret-right"></i
+												<a href="#" class="btn-golden px-3 h5 m-0"
+													>GO <i class="fas fa-caret-right"></i
 												></a>
 											</div>
 
 											<div
 												class="d-flex align-items-center justify-content-center px-2 py-1 bg-gray mt-auto"
 											>
-												<img
-													src="./img/icon-lock.png"
-													alt="Lock image"
-													class="object-contain mr-3 d-none d-md-block"
-												/>
 												<p class="mb-0 text-white font-weight-bold h4">
-													GO VIP &AMP; UNLOCK
+													COMING SOON
 												</p>
 											</div>
 										</div>
 									</div>
 
 									<div class="col-lg-12 col-xl-8 mb-4">
-										<div class="bg-certification px-3 px-md-5 px-lg-5 py-5">
+										<div class="bg-certification px-3 px-md-5 px-lg-5 pt-5 pb-4">
 											<h2
-												class="font-garamond font-weight-bold text-white d-flex justify-content-center mb-4"
+												class="font-garamond font-weight-bold d-flex justify-content-center mb-4"
 											>
 												<img
-													src="./img/icon-lock.png"
+													src="./img/icon-lock-vip.png"
 													alt="Lock image"
 													class="object-contain mr-3 d-none d-md-block"
 												/>
-												<span class="cap-title">
+												<span class="cap-title text-gradient-golden">
 													<img
-														src="./img/icon-crown.png"
+														src="./img/icon-crown-vip.png"
 														alt="Crown image"
 														class="object-contain d-block"
 													/>
@@ -654,13 +639,13 @@
 												>
 											</h2>
 											<ul class="certification-list font-garamond text-center">
-												<li class="bg-training">
+												<li class="bg-training open">
 													<div class="d-flex flex-column h-100 py-2">
 														<h5 class="mt-auto">Traffic<br />Mastery</h5>
 														<a
 															href="#"
 															class="btn-diamond px-2 mt-auto align-self-center"
-															>UPGRADE <i class="fas fa-caret-right"></i
+															>GO <i class="fas fa-caret-right"></i
 														></a>
 													</div>
 												</li>
@@ -737,6 +722,9 @@
 													</div>
 												</li>
 											</ul>
+											<div class="mt-4 text-center">
+												<a href="#" class="text-white font-garamond m-0 h5">Click To Access All Trainings & Certifications</a>
+											</div>
 										</div>
 									</div>
 
