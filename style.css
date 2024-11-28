@@ -103,7 +103,7 @@
 
 .bg-academy {
 	background-image: url(./img/bg-academy.png);
-	background-size: 100%;
+	background-size: cover;
 	background-color: black;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -180,7 +180,7 @@
 
 .bg-certification {
 	background-image: url(./img/bg-certification.png);
-	background-size: 100%;
+	background-size: cover;
 	background-color: black;
 	background-repeat: no-repeat;
 	background-position: center center;
