@@ -487,7 +487,7 @@
 														w/Jason Statham - Let's Find Out How He Does It !
 													</p>
 													<div
-														class="d-flex align-items-center justify-content-center flex-gap-2"
+														class="d-flex flex-column flex-sm-row align-items-center justify-content-center flex-gap-2 mt-2 mt-sm-0"
 													>
 														<h4
 															class="m-0 font-garamond text-mystic line-height-1"
@@ -549,7 +549,7 @@
 													alt="Lock image"
 													class="object-contain mr-2 d-none d-md-block"
 												/>
-												<p class="mb-0 text-white font-weight-bold">
+												<p class="mb-0 text-white font-weight-bold text-center">
 													GO VIP &AMP; EARN 2X CLICK CASH
 												</p>
 											</div>

@@ -544,7 +544,7 @@
 											<div
 												class="d-flex align-items-center justify-content-center px-2 py-1 bg-gradient-golden mt-auto"
 											>
-												<p class="mb-0 text-black font-weight-bold">
+												<p class="mb-0 text-black font-weight-bold text-center">
 													YOU QUALIFY FOR 2X CLICK CASH
 												</p>
 											</div>
