@@ -433,8 +433,8 @@
 								<h3 style="color: #efefef">VIP Marketing Club</h3>
 							</div>
 						</div>
-						<div class="row pl-2 ml-2 pr-2 mr-2 justify-content-center">
-							<div class="col-sm-12 p-2 m-2">
+						<div class="row pl-md-2 ml-md-2 pr-md-2 mr-md-2 justify-content-center">
+							<div class="col-sm-12 p-md-2 m-md-2">
 								<div class="row">
 									<div class="col-lg-6 col-xl-4 mb-4">
 										<div
@@ -735,10 +735,10 @@
 										>
 											<div class="d-flex justify-content-center px-3 pt-4">
 												<h2
-													class="cap-title font-weight-bold m-0 font-garamond text-white mt-4"
+													class="cap-title font-weight-bold m-0 font-garamond text-gradient-golden mt-4"
 												>
 													<img
-														src="./img/icon-crown.png"
+														src="./img/icon-crown-vip.png"
 														alt="Crown image"
 														class="object-contain d-block"
 													/>
@@ -747,8 +747,8 @@
 											</div>
 
 											<div class="text-center my-auto">
-												<a href="#" class="btn-diamond px-3 h5 m-0"
-													>UPGRADE <i class="fas fa-caret-right"></i
+												<a href="#" class="btn-golden px-3 h5 m-0"
+													>GO <i class="fas fa-caret-right"></i
 												></a>
 											</div>
 
@@ -761,7 +761,7 @@
 													class="object-contain mr-3 d-none d-md-block"
 												/>
 												<p class="mb-0 text-white font-weight-bold h4">
-													GO VIP &AMP; UNLOCK
+													COMING SOON
 												</p>
 											</div>
 										</div>

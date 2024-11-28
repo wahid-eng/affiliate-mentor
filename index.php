@@ -433,8 +433,8 @@
 								<h3 style="color: #efefef">VIP Marketing Club</h3>
 							</div>
 						</div>
-						<div class="row pl-2 ml-2 pr-2 mr-2 justify-content-center">
-							<div class="col-sm-12 p-2 m-2">
+						<div class="row pl-md-2 ml-md-2 pr-md-2 mr-md-2 justify-content-center">
+							<div class="col-sm-12 p-md-2 m-md-2">
 								<div class="row">
 									<div class="col-lg-6 col-xl-4 mb-4">
 										<div
