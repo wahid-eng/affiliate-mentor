@@ -23,7 +23,7 @@
 .marketing-widget {
 	min-height: 180px;
 	@media (min-width: 576px) {
-		min-height: 215px;
+		min-height: 212px;
 	}
 	h1,
 	.h1 {

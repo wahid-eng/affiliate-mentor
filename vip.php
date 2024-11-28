@@ -723,7 +723,7 @@
 												</li>
 											</ul>
 											<div class="mt-4 text-center">
-												<a href="#" class="text-white font-garamond m-0 h5">Click To Access All Trainings & Certifications</a>
+												<a href="#" class="text-white font-garamond m-0 h5">Click To Access All Trainings &amp; Certifications</a>
 											</div>
 										</div>
 									</div>

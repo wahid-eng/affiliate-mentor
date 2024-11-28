@@ -635,7 +635,7 @@
 									</div>
 
 									<div class="col-lg-12 col-xl-8 mb-4">
-										<div class="bg-certification px-3 px-md-5 px-lg-5 py-5">
+									<div class="bg-certification px-3 px-md-5 px-lg-5 pt-5 pb-4">
 											<h2
 												class="font-garamond font-weight-bold text-white d-flex justify-content-center mb-4"
 											>
@@ -737,6 +737,9 @@
 													</div>
 												</li>
 											</ul>
+											<div class="mt-4 text-center">
+												<a href="#" class="text-white font-garamond m-0 h5">Click To Access All Trainings &amp; Certifications</a>
+											</div>
 										</div>
 									</div>
 
