@@ -1,5 +1,5 @@
 <?php
-	$is_vip = false;
+$is_vip = isset( $_GET['is_vip'] ) ? filter_var( $_GET['is_vip'] , FILTER_VALIDATE_BOOLEAN ) : false;
 ?>
 
 <!DOCTYPE html>
@@ -249,10 +249,16 @@
 											</a>
 										</div>
 									</div>
-									<div class="d-flex align-items-center justify-content-center px-2 py-1 bg-gray mt-auto">
-										<img src="./img/icon-lock.png" alt="Lock image" class="object-contain mr-2 d-none d-md-block">
-										<p class="mb-0 text-white font-weight-bold text-center">GO VIP &AMP; EARN 2X CLICK CASH</p>
-									</div>
+									<?php if( $is_vip ) : ?>
+										<div class="d-flex align-items-center justify-content-center px-2 py-1 bg-gradient-golden mt-auto" style="min-height: 38px">
+											<p class="mb-0 text-black font-weight-bold text-center">YOU QUALIFY FOR 2X CLICK CASH</p>
+										</div>
+									<?php else : ?>
+										<div class="d-flex align-items-center justify-content-center px-2 py-1 bg-gray mt-auto" style="min-height: 38px">
+											<img src="./img/icon-lock.png" alt="Lock image" class="object-contain mr-2 d-none d-md-block">
+												<p class="mb-0 text-white font-weight-bold text-center"><a href="#" class="text-white text-underline">GO VIP</a> &AMP; EARN 2X CLICK CASH</p>
+										</div>
+									<?php endif; ?>
 								</div>
 							</div>
 							<div class="col-lg-6 col-xl-4 mb-4">
@@ -265,40 +271,56 @@
 										<a href="#" class="btn-golden px-3 h5">GO <i class="fas fa-caret-right"></i>
 										</a>
 									</div>
-									<div class="d-flex align-items-center justify-content-center mt-auto bg-black p-2">
-										<img src="./img/icon-lock-lg.png" alt="Lock image" class="object-contain mr-2 d-none d-md-block">
-										<p class="mb-0 text-white font-weight-bold h4 line-height-1">GO VIP &amp; GET UP TO<br>$2,500 FREE TRAFFIC</p>
-									</div>
+									<?php if( $is_vip ) : ?>
+										<div class="d-flex align-items-center justify-content-center mt-auto bg-gradient-golden p-2" style="min-height: 64px">
+											<p class="mb-0 text-black font-weight-bold h5 line-height-1 text-center">CLICK HERE TO CLAIM YOUR<br/>$2,500 Free Traffic</p>
+										</div>
+									<?php else : ?>
+										<div class="d-flex align-items-center justify-content-center mt-auto bg-black p-2" style="min-height: 64px">
+											<img src="./img/icon-lock-lg.png" alt="Lock image" class="object-contain mr-2 d-none d-md-block">
+											<p class="mb-0 text-white font-weight-bold h4 line-height-1"><a href="#" class="text-white text-underline">GO VIP</a> &amp; GET UP TO<br>$2,500 FREE TRAFFIC</p>
+										</div>
+									<?php endif; ?>
 								</div>
 								<!-- widget visible from desktop -->
 								<div class="marketing-widget d-none d-xl-flex flex-column bg-light-gray rounded-10 mt-4">
 									<div class="d-flex justify-content-center px-3 pt-4">
-										<h2 class="cap-title font-weight-bold m-0 font-garamond text-white mt-4">
-											<img src="./img/icon-crown.png" alt="Crown image" class="object-contain d-block"> VIP FUNNEL HUB
+										<h2 class="cap-title font-weight-bold m-0 font-garamond <?php echo $is_vip ? 'text-gradient-golden' : 'text-white'; ?> mt-4">
+											<img src="<?php echo $is_vip ? './img/icon-crown-vip.png' : './img/icon-crown.png'; ?>" alt="Crown image" class="object-contain d-block"> VIP FUNNEL HUB
 										</h2>
 									</div>
 									<div class="text-center my-auto">
-										<a href="#" class="btn-diamond px-3 h5 m-0">UPGRADE <i class="fas fa-caret-right"></i>
-										</a>
+										<?php if( $is_vip ) : ?>
+											<a href="#" class="btn-golden px-3 h5 m-0">GO <i class="fas fa-caret-right"></i></a>
+										<?php else : ?>
+											<a href="#" class="btn-diamond px-3 h5 m-0">UPGRADE <i class="fas fa-caret-right"></i></a>
+										<?php endif; ?>
 									</div>
-									<div class="d-flex align-items-center justify-content-center px-2 py-1 bg-gray mt-auto">
-										<img src="./img/icon-lock.png" alt="Lock image" class="object-contain mr-3 d-none d-md-block">
-										<p class="mb-0 text-white font-weight-bold h4">GO VIP &AMP; UNLOCK</p>
-									</div>
+									
+									<?php if( $is_vip ) : ?>
+										<div class="d-flex align-items-center justify-content-center px-2 py-1 bg-gray mt-auto">
+											<p class="mb-0 text-white font-weight-bold h4">COMING SOON</p>
+										</div>
+									<?php else : ?>
+										<div class="d-flex align-items-center justify-content-center px-2 py-1 bg-gray mt-auto">
+											<img src="./img/icon-lock.png" alt="Lock image" class="object-contain mr-3 d-none d-md-block">
+											<p class="mb-0 text-white font-weight-bold h4"><a href="#" class="text-white text-underline">GO VIP</a> &AMP; UNLOCK</p>
+										</div>
+									<?php endif; ?>
 								</div>
 							</div>
 							<div class="col-lg-12 col-xl-8 mb-4">
 								<div class="bg-certification px-3 px-md-5 px-lg-5 pt-5 pb-4">
-									<h2 class="font-garamond font-weight-bold text-white d-flex justify-content-center mb-4">
-										<img src="./img/icon-lock.png" alt="Lock image" class="object-contain mr-3 d-none d-md-block">
-										<span class="cap-title">
-											<img src="./img/icon-crown.png" alt="Crown image" class="object-contain d-block"> VIP CERTIFICATION TRAINING</span>
+									<h2 class="font-garamond font-weight-bold d-flex justify-content-center mb-4">
+										<img src="<?php echo $is_vip ? './img/icon-lock-vip.png' : './img/icon-lock.png'; ?>" alt="Lock image" class="object-contain mr-3 d-none d-md-block">
+										<span class="cap-title <?php echo $is_vip ? 'text-gradient-golden' : 'text-white'; ?>">
+											<img src="<?php echo $is_vip ? './img/icon-crown-vip.png' : './img/icon-crown.png'; ?>" alt="Crown image" class="object-contain d-block"> VIP CERTIFICATION TRAINING</span>
 									</h2>
 									<ul class="certification-list font-garamond text-center">
-										<li class="bg-training">
+										<li class="bg-training <?php echo $is_vip ? 'open' : ''; ?>">
 											<div class="d-flex flex-column h-100 py-2">
 												<h5 class="mt-auto">Traffic<br>Mastery</h5>
-												<a href="#" class="btn-diamond px-2 mt-auto align-self-center">UPGRADE <i class="fas fa-caret-right"></i></a>
+												<a href="#" class="btn-diamond px-2 mt-auto align-self-center"><?php echo $is_vip ? 'GO' : 'UPGRADE'; ?> <i class="fas fa-caret-right"></i></a>
 											</div>
 										</li>
 										<li class="bg-training">
@@ -350,22 +372,32 @@
 									</div>
 								</div>
 							</div>
-							<!-- widget hidden from desktop -->
 							<div class="col-12 d-xl-none mb-4">
-								<div class="marketing-widget d-flex flex-column bg-light-gray rounded-10 h-100">
+								<!-- widget hidden from desktop -->
+								<div class="marketing-widget d-flex flex-column bg-light-gray rounded-10">
 									<div class="d-flex justify-content-center px-3 pt-4">
-										<h2 class="cap-title font-weight-bold m-0 font-garamond text-white mt-4">
-											<img src="./img/icon-crown.png" alt="Crown image" class="object-contain d-block"> VIP FUNNEL HUB
+										<h2 class="cap-title font-weight-bold m-0 font-garamond <?php echo $is_vip ? 'text-gradient-golden' : 'text-white'; ?> mt-4">
+											<img src="<?php echo $is_vip ? './img/icon-crown-vip.png' : './img/icon-crown.png'; ?>" alt="Crown image" class="object-contain d-block"> VIP FUNNEL HUB
 										</h2>
 									</div>
 									<div class="text-center my-auto">
-										<a href="#" class="btn-diamond px-3 h5 m-0">UPGRADE <i class="fas fa-caret-right"></i>
-										</a>
+										<?php if( $is_vip ) : ?>
+											<a href="#" class="btn-golden px-3 h5 m-0">GO <i class="fas fa-caret-right"></i></a>
+										<?php else : ?>
+											<a href="#" class="btn-diamond px-3 h5 m-0">UPGRADE <i class="fas fa-caret-right"></i></a>
+										<?php endif; ?>
 									</div>
-									<div class="d-flex align-items-center justify-content-center px-2 py-1 bg-gray mt-auto">
-										<img src="./img/icon-lock.png" alt="Lock image" class="object-contain mr-3 d-none d-md-block">
-										<p class="mb-0 text-white font-weight-bold h4"> GO VIP &AMP; UNLOCK </p>
-									</div>
+									
+									<?php if( $is_vip ) : ?>
+										<div class="d-flex align-items-center justify-content-center px-2 py-1 bg-gray mt-auto">
+											<p class="mb-0 text-white font-weight-bold h4">COMING SOON</p>
+										</div>
+									<?php else : ?>
+										<div class="d-flex align-items-center justify-content-center px-2 py-1 bg-gray mt-auto">
+											<img src="./img/icon-lock.png" alt="Lock image" class="object-contain mr-3 d-none d-md-block">
+											<p class="mb-0 text-white font-weight-bold h4"><a href="#" class="text-white text-underline">GO VIP</a> &AMP; UNLOCK</p>
+										</div>
+									<?php endif; ?>
 								</div>
 							</div>
 						</div>
